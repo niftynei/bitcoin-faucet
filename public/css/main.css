@@ -711,7 +711,7 @@ a.has-text-primary:hover, a.has-text-primary:focus {
   color: #b15200 !important; }
 
 .has-background-primary {
-  background-color: #E46A00 !important; }
+  background-color: black !important; }
 
 .has-text-link {
   color: #3273dc !important; }
@@ -11644,7 +11644,7 @@ label.panel-block {
   padding: 100px!important; }
 
 #myNav {
-  background-color: #E46A00; }
+  background-color: black; }
   #myNav .navbar-brand .navbar-item {
     color: white;
     font-weight: bold;
