@@ -24,6 +24,7 @@ declare module 'express-session' {
 import config from './config';
 
 const app = express();
+app.use(express.static('public'));
 
 const rlfFaucetOpts = {
     points: 100000000,  // 1 btc
