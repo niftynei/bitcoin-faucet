@@ -61,9 +61,9 @@ const check = async (req: Request, _res: Response) => {
 }
 
 const render = (_req: Request, res: Response, filebasename: string, data: MixedData) => {
-    const filename = `../html/${filebasename.includes('.') ? filebasename : `${filebasename}.html`}`;
+    const filename = `${__dirname}/../html/${filebasename.includes('.') ? filebasename : `${filebasename}.html`}`;
     if (!fs.existsSync(filename)) {
-        res.status(400).send({ message: 'file not found' });
+        res.status(400).send({ message: 'file not found:' + filename});
         return;
     }
     if (filename.endsWith('.html')) {
